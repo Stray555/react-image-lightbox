@@ -3,6 +3,7 @@
   "version": "5.0.0",
   "description": "A lightbox component for React.js",
   "scripts": {
+    "prepare": "npm run build",
     "build": "npm run clean && cross-env NODE_ENV=production TARGET=umd webpack --bail",
     "build:demo": "npm run clean:demo && cross-env NODE_ENV=production TARGET=demo webpack --bail",
     "clean": "rimraf dist style.css style.css.map",
